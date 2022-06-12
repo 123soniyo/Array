@@ -1,0 +1,13 @@
+def unique(a):
+    ans=0
+    for i in range(n):
+        ans=ans^a[i]
+    print(ans)
+    
+
+t=int(input())
+while t>0:
+    n=int(input())
+    a=[int(i) for i in input().split()]
+    unique(a)
+    t-=1
