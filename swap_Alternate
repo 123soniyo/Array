@@ -1,0 +1,14 @@
+
+def swap_alternate(li):
+    n=len(li)
+    for i in range(0,n-1,2):
+        li[i],li[i+1]=li[i+1],li[i]
+
+t=int(input())
+while(t>0):
+    
+    n=int(input())
+    li=[int(i) for i in input().split()]
+    swap_alternate(li)
+    print(*li)
+    t=t-1
